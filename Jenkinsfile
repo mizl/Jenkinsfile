@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        input 'test'
+        build 'test'
       }
     }
 
