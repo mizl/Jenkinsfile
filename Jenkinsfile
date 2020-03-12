@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh '''id=2
-echo $id'''
+        sh 'echo $id'
       }
     }
 
