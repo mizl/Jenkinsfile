@@ -3,9 +3,13 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'echo ok'
+        sh '''id=2
+echo $id'''
       }
     }
 
+  }
+  environment {
+    id = '1'
   }
 }
